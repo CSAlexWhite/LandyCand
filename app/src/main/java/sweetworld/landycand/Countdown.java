@@ -29,6 +29,7 @@ public class Countdown extends AppCompatActivity {
     public void endTitleScreen(){
 
         final Intent intent = new Intent(this, Countdown1.class);
+        intent.addFlags(android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION);
 
         try{
             Thread.sleep(1000);
@@ -55,7 +56,6 @@ public class Countdown extends AppCompatActivity {
             public void onAnimationEnd(Animation animation) {
                 img_Title.setVisibility(View.GONE);
                 startActivity(intent);
-
             }
         });
 
