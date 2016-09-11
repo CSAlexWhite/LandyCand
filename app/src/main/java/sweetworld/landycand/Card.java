@@ -1,10 +1,9 @@
-package sweetworld.landycand.logic;
+package sweetworld.landycand;
 
 /**
- * Created by Alex on 9/10/16.
- */
+        * Created by alexw on 9/11/2016.
+        */
 public class Card {
-
     public String color;
     public int size;
 
