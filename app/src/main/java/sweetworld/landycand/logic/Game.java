@@ -10,6 +10,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 
@@ -23,6 +24,8 @@ public class Game {
     private String cardfile, boardfile;
 
     private int[] currentposition;
+    private boolean[] is_stuck;
+    private String[] stuck_color;
 
     public Game(String cards, String board, int numplayers){
 
@@ -30,12 +33,17 @@ public class Game {
         boardfile = board;
 
         currentposition = new int[numplayers];
+        is_stuck = new boolean[numplayers];
+
+        Arrays.fill(currentposition, 0);
+        Arrays.fill(is_stuck, false);
+        Arrays.fill(stuck_color, 'z');
 
         draw();
         shuffle();
         setBoard();
 
-        play();
+        play(numplayers);
     }
 
     /**
@@ -52,10 +60,11 @@ public class Game {
 
                 char c = line.charAt(0);
 
-                if(line.length() > 1){
-                    if(Character.isUpperCase(c)) deck.add(new Card(String.valueOf(Character.toLowerCase(c)), 2));
-                    else deck.add(new Card(String.valueOf(c), 1));
+                if(line.length() == 1){
+                    if(Character.isUpperCase(c)) deck.add(new Card(String.valueOf(c), 2));
+                    else deck.add(new Card(String.valueOf(c).toUpperCase().concat(String.valueOf(c).toUpperCase()), 1));
                 }
+                else deck.add(new Card(line, 3));
             }
 
             Log.i("CALC", deck.toString());
@@ -92,19 +101,35 @@ public class Game {
         catch(IOException ioe) {ioe.printStackTrace();}
     }
 
-    public void play(){
-
+    public void play(int n){
+        for(int i=0; i<n; i++){
+//            if(getNext(i, drawCard()) == 1000)  //someone won!;
+        }
     }
 
     private int getNext(int playernumber, Card currentcard){
 
-        int n = playernumber;
-        String currentColor = board.get(n)[0];
-        n++;
-        while(board.get(n)[1] != currentColor){
+        int playerposition = currentposition[playernumber];
 
-            if()
+        if(is_stuck[playernumber] && (currentcard.color != stuck_color[playernumber]))
+            return playerposition;
+
+        int n = playerposition + 1;
+        while(board.get(n)[0] != currentcard.color){        // TODO use .equals() not !=
+
+            if(board.get(n).length > 2){
+                //stuck logic
+                is_stuck[playernumber] = true;
+                stuck_color[playernumber] = (board.get(n)[0]);
+                break;
+            }
+            if(n > 132) return 1000;
+            n++;
         }
         return n;
+    }
+
+    private Card drawCard(){
+        return deck.remove(0);
     }
 }

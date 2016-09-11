@@ -1,6 +1,7 @@
 package sweetworld.landycand;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class StartGame extends AppCompatActivity {
 
@@ -16,6 +18,10 @@ public class StartGame extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_game);
+
+        Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/COURIER.TTF");
+        TextView tv = (TextView) findViewById(R.id.nameentry);
+        tv.setTypeface(tf);
     }
 
     @Override

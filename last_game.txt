@@ -1,0 +1,761 @@
+"C:\Program Files\Java\jdk1.8.0_65\bin\java" -Didea.launcher.port=7580 "-Didea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 14.1.5\bin" -Dfile.encoding=windows-1252 -classpath "C:\Program Files\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\ext\zipfs.jar;C:\Users\alexw\Dropbox\PROJECTS\ComedyHackDay\LandyCandTest2\out\production\LandyCandTest2;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 14.1.5\lib\idea_rt.jar" com.intellij.rt.execution.application.AppMain com.company.Main
+**Initializing Cards**
+
+**Shuffling**
+
+******************
+
+TURN 0
+
+It is now Nate's turn
+Nate is starting at position Red#0
+Nate drew a Yellow
+Nate moved 2 spaces
+Nate is now at position Yellow#2
+
+It is now Alex's turn
+Alex is starting at position Red#0
+Alex drew a Trip to Mint's World
+Alex moved 17 spaces
+Alex is now at position 17, Mint's World
+
+It is now Kathy's turn
+Kathy is starting at position Red#0
+Kathy drew a Orange
+Kathy moved 4 spaces
+Kathy is now at position Orange#4
+Kathy is now stuck 
+
+It is now Wanda's turn
+Wanda is starting at position Red#0
+Wanda drew a Blue
+Wanda moved 3 spaces
+Wanda is now at position Blue#3
+
+******************
+
+TURN 1
+
+It is now Nate's turn
+Nate is starting at position Yellow#2
+Nate drew a Orange
+Nate moved 2 spaces
+Nate is now at position Orange#4
+Nate is now stuck 
+
+It is now Alex's turn
+Alex is starting at Mint's World
+Alex drew a Orange
+Alex moved 1 spaces
+Alex is now at position Orange#18
+
+It is now Kathy's turn
+Kathy is starting at position Orange#4
+Kathy is currently stuck.
+Kathy drew a Red
+Kathy didn't get a Orange and is still stuck at Orange#4
+
+It is now Wanda's turn
+Wanda is starting at position Blue#3
+Wanda drew a Green
+Wanda moved 2 spaces
+Wanda is now at position Green#5
+
+******************
+
+TURN 2
+
+It is now Nate's turn
+Nate is starting at position Orange#4
+Nate is currently stuck.
+Nate drew a Purple
+Nate didn't get a Orange and is still stuck at Orange#4
+
+It is now Alex's turn
+Alex is starting at position Orange#18
+Alex drew a Red
+Alex moved 2 spaces
+Alex is now at position Red#20
+
+It is now Kathy's turn
+Kathy is starting at position Orange#4
+Kathy is currently stuck.
+Kathy drew a Green
+Kathy didn't get a Orange and is still stuck at Orange#4
+
+It is now Wanda's turn
+Wanda is starting at position Green#5
+Wanda drew a Purple
+Wanda moved 2 spaces
+Wanda is now at position Purple#7
+
+******************
+
+TURN 3
+
+It is now Nate's turn
+Nate is starting at position Orange#4
+Nate is currently stuck.
+Nate drew a Trip to Plumpy's World
+Nate moved 4 spaces
+Nate is now at position 8, Plumpy's World
+
+It is now Alex's turn
+Alex is starting at position Red#20
+Alex drew a Blue
+Alex moved 3 spaces
+Alex is now at position Blue#23
+
+It is now Kathy's turn
+Kathy is starting at position Orange#4
+Kathy is currently stuck.
+Kathy drew a Trip to Nut's World
+Kathy moved 70 spaces
+Kathy is now at position 74, Nut's World
+
+It is now Wanda's turn
+Wanda is starting at position Purple#7
+Wanda drew a Purple
+Wanda moved 7 spaces
+Wanda is now at position Purple#14
+
+******************
+
+TURN 4
+
+It is now Nate's turn
+Nate is starting at Plumpy's World
+Nate is currently stuck.
+Nate drew a Yellow
+Nate didn't get a Orange and is still stuck at Orange#8
+
+It is now Alex's turn
+Alex is starting at position Blue#23
+Alex drew a Yellow
+Alex moved 5 spaces
+Alex is now at position Yellow#28
+
+It is now Kathy's turn
+Kathy is starting at Nut's World
+Kathy is currently stuck.
+Kathy drew a Green
+Kathy didn't get a Orange and is still stuck at Orange#74
+
+It is now Wanda's turn
+Wanda is starting at position Purple#14
+Wanda drew a Red
+Wanda moved 6 spaces
+Wanda is now at position Red#20
+
+******************
+
+TURN 5
+
+It is now Nate's turn
+Nate is starting at Plumpy's World
+Nate is currently stuck.
+Nate drew a Green
+Nate didn't get a Orange and is still stuck at Orange#8
+
+It is now Alex's turn
+Alex is starting at position Yellow#28
+Alex drew a Blue
+Alex moved 1 spaces
+Alex is now at position Blue#29
+
+It is now Kathy's turn
+Kathy is starting at Nut's World
+Kathy is currently stuck.
+Kathy drew a Orange
+Kathy moved 6 spaces
+Kathy is now at position Orange#80
+
+It is now Wanda's turn
+Wanda is starting at position Red#20
+Wanda drew a Red
+Wanda moved 6 spaces
+Wanda is now at position Red#26
+
+******************
+
+TURN 6
+
+It is now Nate's turn
+Nate is starting at Plumpy's World
+Nate is currently stuck.
+Nate drew a Blue
+Nate didn't get a Orange and is still stuck at Orange#8
+
+It is now Alex's turn
+Alex is starting at position Blue#29
+Alex drew a Purple
+Alex moved 4 spaces
+Alex is now at position Purple#33
+Alex is now stuck 
+
+It is now Kathy's turn
+Kathy is starting at position Orange#80
+Kathy is currently stuck.
+Kathy drew a Green
+Kathy didn't get a Orange and is still stuck at Orange#80
+
+It is now Wanda's turn
+Wanda is starting at position Red#26
+Wanda drew a Purple
+Wanda moved 1 spaces
+Wanda is now at position Purple#27
+
+******************
+
+TURN 7
+
+It is now Nate's turn
+Nate is starting at Plumpy's World
+Nate is currently stuck.
+Nate drew a Yellow
+Nate didn't get a Orange and is still stuck at Orange#8
+
+It is now Alex's turn
+Alex is starting at position Purple#33
+Alex is currently stuck.
+Alex drew a Yellow
+Alex didn't get a Purple and is still stuck at Purple#33
+
+It is now Kathy's turn
+Kathy is starting at position Orange#80
+Kathy is currently stuck.
+Kathy drew a Purple
+Kathy didn't get a Orange and is still stuck at Orange#80
+
+It is now Wanda's turn
+Wanda is starting at position Purple#27
+Wanda drew a Blue
+Wanda moved 2 spaces
+Wanda is now at position Blue#29
+
+******************
+
+TURN 8
+
+It is now Nate's turn
+Nate is starting at Plumpy's World
+Nate is currently stuck.
+Nate drew a Blue
+Nate didn't get a Orange and is still stuck at Orange#8
+
+It is now Alex's turn
+Alex is starting at position Purple#33
+Alex is currently stuck.
+Alex drew a Red
+Alex didn't get a Purple and is still stuck at Purple#33
+
+It is now Kathy's turn
+Kathy is starting at position Orange#80
+Kathy is currently stuck.
+Kathy drew a Blue
+Kathy didn't get a Orange and is still stuck at Orange#80
+
+It is now Wanda's turn
+Wanda is starting at position Blue#29
+Wanda drew a Green
+Wanda moved 2 spaces
+Wanda is now at position Green#31
+
+******************
+
+TURN 9
+
+It is now Nate's turn
+Nate is starting at Plumpy's World
+Nate is currently stuck.
+Nate drew a Yellow
+Nate didn't get a Orange and is still stuck at Orange#8
+
+It is now Alex's turn
+Alex is starting at position Purple#33
+Alex is currently stuck.
+Alex drew a Yellow
+Alex didn't get a Purple and is still stuck at Purple#33
+
+It is now Kathy's turn
+Kathy is starting at position Orange#80
+Kathy is currently stuck.
+Kathy drew a Blue
+Kathy didn't get a Orange and is still stuck at Orange#80
+
+It is now Wanda's turn
+Wanda is starting at position Green#31
+Wanda drew a Orange
+Wanda moved 5 spaces
+Wanda is now at position Orange#36
+
+******************
+
+TURN 10
+
+It is now Nate's turn
+Nate is starting at Plumpy's World
+Nate is currently stuck.
+Nate drew a Green
+Nate didn't get a Orange and is still stuck at Orange#8
+
+It is now Alex's turn
+Alex is starting at position Purple#33
+Alex is currently stuck.
+Alex drew a Purple
+Alex moved 6 spaces
+Alex is now at position Purple#39
+
+It is now Kathy's turn
+Kathy is starting at position Orange#80
+Kathy is currently stuck.
+Kathy drew a Yellow
+Kathy didn't get a Orange and is still stuck at Orange#80
+
+It is now Wanda's turn
+Wanda is starting at position Orange#36
+Wanda drew a Orange
+Wanda moved 7 spaces
+Wanda is now at position Orange#43
+
+******************
+
+TURN 11
+
+It is now Nate's turn
+Nate is starting at Plumpy's World
+Nate is currently stuck.
+Nate drew a Orange
+Nate moved 3 spaces
+Nate is now at position Orange#11
+
+It is now Alex's turn
+Alex is starting at position Purple#39
+Alex is currently stuck.
+Alex drew a Red
+Alex didn't get a Purple and is still stuck at Purple#39
+
+It is now Kathy's turn
+Kathy is starting at position Orange#80
+Kathy is currently stuck.
+Kathy drew a Blue
+Kathy didn't get a Orange and is still stuck at Orange#80
+
+It is now Wanda's turn
+Wanda is starting at position Orange#43
+Wanda drew a Orange
+Wanda moved 6 spaces
+Wanda is now at position Orange#49
+
+******************
+
+TURN 12
+
+It is now Nate's turn
+Nate is starting at position Orange#11
+Nate is currently stuck.
+Nate drew a Red
+Nate didn't get a Orange and is still stuck at Orange#11
+
+It is now Alex's turn
+Alex is starting at position Purple#39
+Alex is currently stuck.
+Alex drew a Red
+Alex didn't get a Purple and is still stuck at Purple#39
+
+It is now Kathy's turn
+Kathy is starting at position Orange#80
+Kathy is currently stuck.
+Kathy drew a Green
+Kathy didn't get a Orange and is still stuck at Orange#80
+
+It is now Wanda's turn
+Wanda is starting at position Orange#49
+Wanda drew a Trip to Lolly's World
+Wanda moved 46 spaces
+Wanda is now at position 95, Lolly's World
+
+******************
+
+TURN 13
+
+It is now Nate's turn
+Nate is starting at position Orange#11
+Nate is currently stuck.
+Nate drew a Trip to Jolly's World
+Nate moved 31 spaces
+Nate is now at position 42, Jolly's World
+
+It is now Alex's turn
+Alex is starting at position Purple#39
+Alex is currently stuck.
+Alex drew a Purple
+Alex moved 7 spaces
+Alex is now at position Purple#46
+
+It is now Kathy's turn
+Kathy is starting at position Orange#80
+Kathy is currently stuck.
+Kathy drew a Red
+Kathy didn't get a Orange and is still stuck at Orange#80
+
+It is now Wanda's turn
+Wanda is starting at Lolly's World
+Wanda drew a Red
+Wanda moved 6 spaces
+Wanda is now at position Red#101
+
+******************
+
+TURN 14
+
+It is now Nate's turn
+Nate is starting at Jolly's World
+Nate is currently stuck.
+Nate drew a Blue
+Nate didn't get a Orange and is still stuck at Orange#42
+
+It is now Alex's turn
+Alex is starting at position Purple#46
+Alex is currently stuck.
+Alex drew a Green
+Alex didn't get a Purple and is still stuck at Purple#46
+
+It is now Kathy's turn
+Kathy is starting at position Orange#80
+Kathy is currently stuck.
+Kathy drew a Orange
+Kathy moved 6 spaces
+Kathy is now at position Orange#86
+
+It is now Wanda's turn
+Wanda is starting at position Red#101
+Wanda drew a Trip to Frostine's World
+Wanda moved 2 spaces
+Wanda is now at position 103, Frostine's World
+
+******************
+
+TURN 15
+
+It is now Nate's turn
+Nate is starting at Jolly's World
+Nate is currently stuck.
+Nate drew a Orange
+Nate moved 1 spaces
+Nate is now at position Orange#43
+
+It is now Alex's turn
+Alex is starting at position Purple#46
+Alex is currently stuck.
+Alex drew a Purple
+Alex moved 6 spaces
+Alex is now at position Purple#52
+
+It is now Kathy's turn
+Kathy is starting at position Orange#86
+Kathy is currently stuck.
+Kathy drew a Yellow
+Kathy didn't get a Orange and is still stuck at Orange#86
+
+It is now Wanda's turn
+Wanda is starting at Frostine's World
+Wanda drew a Green
+Wanda moved 4 spaces
+Wanda is now at position Green#107
+
+******************
+
+TURN 16
+
+It is now Nate's turn
+Nate is starting at position Orange#43
+Nate is currently stuck.
+Nate drew a Yellow
+Nate didn't get a Orange and is still stuck at Orange#43
+
+It is now Alex's turn
+Alex is starting at position Purple#52
+Alex is currently stuck.
+Alex drew a Purple
+Alex moved 6 spaces
+Alex is now at position Purple#58
+
+It is now Kathy's turn
+Kathy is starting at position Orange#86
+Kathy is currently stuck.
+
+No more cards, reshuffling
+**Initializing Cards**
+**Shuffling**
+Kathy drew a Trip to Mint's World
+Kathy moved -69 spaces
+Kathy is now at position 17, Mint's World
+
+It is now Wanda's turn
+Wanda is starting at position Green#107
+Wanda drew a Purple
+Wanda moved 2 spaces
+Wanda is now at position Purple#109
+
+******************
+
+TURN 17
+
+It is now Nate's turn
+Nate is starting at position Orange#43
+Nate is currently stuck.
+Nate drew a Yellow
+Nate didn't get a Orange and is still stuck at Orange#43
+
+It is now Alex's turn
+Alex is starting at position Purple#58
+Alex is currently stuck.
+Alex drew a Green
+Alex didn't get a Purple and is still stuck at Purple#58
+
+It is now Kathy's turn
+Kathy is starting at Mint's World
+Kathy is currently stuck.
+Kathy drew a Trip to Plumpy's World
+Kathy moved -9 spaces
+Kathy is now at position 8, Plumpy's World
+
+It is now Wanda's turn
+Wanda is starting at position Purple#109
+Wanda drew a Orange
+Wanda moved 3 spaces
+Wanda is now at position Orange#112
+
+******************
+
+TURN 18
+
+It is now Nate's turn
+Nate is starting at position Orange#43
+Nate is currently stuck.
+Nate drew a Orange
+Nate moved 6 spaces
+Nate is now at position Orange#49
+
+It is now Alex's turn
+Alex is starting at position Purple#58
+Alex is currently stuck.
+Alex drew a Trip to Frostine's World
+Alex moved 45 spaces
+Alex is now at position 103, Frostine's World
+
+It is now Kathy's turn
+Kathy is starting at Plumpy's World
+Kathy is currently stuck.
+Kathy drew a Red
+Kathy didn't get a Orange and is still stuck at Orange#8
+
+It is now Wanda's turn
+Wanda is starting at position Orange#112
+Wanda drew a Blue
+Wanda moved 5 spaces
+Wanda is now at position Blue#117
+
+******************
+
+TURN 19
+
+It is now Nate's turn
+Nate is starting at position Orange#49
+Nate is currently stuck.
+Nate drew a Blue
+Nate didn't get a Orange and is still stuck at Orange#49
+
+It is now Alex's turn
+Alex is starting at Frostine's World
+Alex is currently stuck.
+Alex drew a Red
+Alex didn't get a Purple and is still stuck at Purple#103
+
+It is now Kathy's turn
+Kathy is starting at Plumpy's World
+Kathy is currently stuck.
+Kathy drew a Yellow
+Kathy didn't get a Orange and is still stuck at Orange#8
+
+It is now Wanda's turn
+Wanda is starting at position Blue#117
+Wanda drew a Orange
+Wanda moved 1 spaces
+Wanda is now at position Orange#118
+
+******************
+
+TURN 20
+
+It is now Nate's turn
+Nate is starting at position Orange#49
+Nate is currently stuck.
+Nate drew a Red
+Nate didn't get a Orange and is still stuck at Orange#49
+
+It is now Alex's turn
+Alex is starting at Frostine's World
+Alex is currently stuck.
+Alex drew a Purple
+Alex moved 6 spaces
+Alex is now at position Purple#109
+
+It is now Kathy's turn
+Kathy is starting at Plumpy's World
+Kathy is currently stuck.
+Kathy drew a Red
+Kathy didn't get a Orange and is still stuck at Orange#8
+
+It is now Wanda's turn
+Wanda is starting at position Orange#118
+Wanda drew a Yellow
+Wanda moved 4 spaces
+Wanda is now at position Yellow#122
+
+******************
+
+TURN 21
+
+It is now Nate's turn
+Nate is starting at position Orange#49
+Nate is currently stuck.
+Nate drew a Yellow
+Nate didn't get a Orange and is still stuck at Orange#49
+
+It is now Alex's turn
+Alex is starting at position Purple#109
+Alex is currently stuck.
+Alex drew a Purple
+Alex moved 6 spaces
+Alex is now at position Purple#115
+
+It is now Kathy's turn
+Kathy is starting at Plumpy's World
+Kathy is currently stuck.
+Kathy drew a Red
+Kathy didn't get a Orange and is still stuck at Orange#8
+
+It is now Wanda's turn
+Wanda is starting at position Yellow#122
+Wanda drew a Blue
+Wanda moved 1 spaces
+Wanda is now at position Blue#123
+
+******************
+
+TURN 22
+
+It is now Nate's turn
+Nate is starting at position Orange#49
+Nate is currently stuck.
+Nate drew a Orange
+Nate moved 6 spaces
+Nate is now at position Orange#55
+
+It is now Alex's turn
+Alex is starting at position Purple#115
+Alex is currently stuck.
+Alex drew a Green
+Alex didn't get a Purple and is still stuck at Purple#115
+
+It is now Kathy's turn
+Kathy is starting at Plumpy's World
+Kathy is currently stuck.
+Kathy drew a Trip to Nut's World
+Kathy moved 66 spaces
+Kathy is now at position 74, Nut's World
+
+It is now Wanda's turn
+Wanda is starting at position Blue#123
+Wanda drew a Green
+Wanda moved 2 spaces
+Wanda is now at position Green#125
+
+******************
+
+TURN 23
+
+It is now Nate's turn
+Nate is starting at position Orange#55
+Nate is currently stuck.
+Nate drew a Yellow
+Nate didn't get a Orange and is still stuck at Orange#55
+
+It is now Alex's turn
+Alex is starting at position Purple#115
+Alex is currently stuck.
+Alex drew a Purple
+Alex moved 6 spaces
+Alex is now at position Purple#121
+
+It is now Kathy's turn
+Kathy is starting at Nut's World
+Kathy is currently stuck.
+Kathy drew a Green
+Kathy didn't get a Orange and is still stuck at Orange#74
+
+It is now Wanda's turn
+Wanda is starting at position Green#125
+Wanda drew a Green
+Wanda moved 5 spaces
+Wanda is now at position Green#130
+
+******************
+
+TURN 24
+
+It is now Nate's turn
+Nate is starting at position Orange#55
+Nate is currently stuck.
+Nate drew a Green
+Nate didn't get a Orange and is still stuck at Orange#55
+
+It is now Alex's turn
+Alex is starting at position Purple#121
+Alex is currently stuck.
+Alex drew a Purple
+Alex moved 6 spaces
+Alex is now at position Purple#127
+
+It is now Kathy's turn
+Kathy is starting at Nut's World
+Kathy is currently stuck.
+Kathy drew a Red
+Kathy didn't get a Orange and is still stuck at Orange#74
+
+It is now Wanda's turn
+Wanda is starting at position Green#130
+Wanda drew a Purple
+Wanda moved 2 spaces
+Wanda is now at position Purple#132
+
+******************
+
+TURN 25
+
+It is now Nate's turn
+Nate is starting at position Orange#55
+Nate is currently stuck.
+Nate drew a Purple
+Nate didn't get a Orange and is still stuck at Orange#55
+
+It is now Alex's turn
+Alex is starting at position Purple#127
+Alex is currently stuck.
+Alex drew a Yellow
+Alex didn't get a Purple and is still stuck at Purple#127
+
+It is now Kathy's turn
+Kathy is starting at Nut's World
+Kathy is currently stuck.
+Kathy drew a Blue
+Kathy didn't get a Orange and is still stuck at Orange#74
+
+It is now Wanda's turn
+Wanda is starting at position Purple#132
+Wanda drew a Orange
+Wanda is the WINNER
+
+Process finished with exit code 0
