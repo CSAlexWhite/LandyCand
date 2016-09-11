@@ -15,7 +15,7 @@ import java.util.HashMap;
 /**
  * Created by alexw on 9/11/2016.
  */
-public class Game implements Runnable {
+public class Game {
 
     private Context thiscontext;
 
@@ -64,7 +64,7 @@ public class Game implements Runnable {
         Arrays.fill(stuck_color, "z");
 
         draw();
-        Log.i("", "");
+        consoleout.append( "");
         shuffle();
         setBoard();
 
@@ -106,7 +106,7 @@ public class Game implements Runnable {
      * Fills up the arraylist of cards from the config file
      */
     private void draw(){
-        Log.i("", "**Initializing Cards**");
+        consoleout.append( "**Initializing Cards**");
         String line;
         try{
             //InputStream fis = new FileInputStream(cardfile);
@@ -140,7 +140,7 @@ public class Game implements Runnable {
      * Randomizes the order of the cards in the deck
      */
     private void shuffle(){
-        /*LOG*/    Log.i("", "**Shuffling**");
+        /*LOG*/    consoleout.append( "**Shuffling**");
         Collections.shuffle(deck);
     }
 
@@ -164,10 +164,10 @@ public class Game implements Runnable {
         catch(IOException ioe) {ioe.printStackTrace();}
     }
 
-    @Override
-    public void run(){
-        play(2);
-    }
+//    @Override
+//    public void run(){
+//        play(2);
+//    }
 
     public void play(int n){
 
@@ -175,27 +175,27 @@ public class Game implements Runnable {
 
         while(true) {
 
-            Log.i("", "\n******************\n\nTURN " + turn++);
+            consoleout.append( "\n******************\n\nTURN " + turn++);
 
             for (int i = 0; i < n; i++) {
 
-                Log.i("", "\nIt is now " + names.get(i) + "'s turn");
+                consoleout.append( "\nIt is now " + names.get(i) + "'s turn");
 
                 if(board.get(currentposition[i])[0].length() > 1) {
-                    Log.i("", names.get(i) + " is starting at " + colors.get(board.get(currentposition[i])[0]).substring(8));
+                    consoleout.append( names.get(i) + " is starting at " + colors.get(board.get(currentposition[i])[0]).substring(8));
                     consoleout.append(names.get(i) + " is starting at " + colors.get(board.get(currentposition[i])[0]).substring(8));
                 }
 
                 else {
-                    Log.i("", names.get(i) + " is starting at position " + colors.get(board.get(currentposition[i])[0]) + "#" + currentposition[i]);
-                    if(is_stuck[i])  Log.i("", names.get(i) + " is currently stuck.");
+                    consoleout.append( names.get(i) + " is starting at position " + colors.get(board.get(currentposition[i])[0]) + "#" + currentposition[i]);
+                    if(is_stuck[i])  consoleout.append( names.get(i) + " is currently stuck.");
                 }
 
                 Card currentCard = drawCard();
-                /*LOG*/ Log.i("", names.get(i) + " drew a " + colors.get(currentCard.color));
+                /*LOG*/ consoleout.append( names.get(i) + " drew a " + colors.get(currentCard.color));
 
                 if (getNext(i, currentCard) == 1000){
-                    /*LOG*/    Log.i("", names.get(i) + " is the WINNER"); //someone won!;
+                    /*LOG*/    consoleout.append( names.get(i) + " is the WINNER"); //someone won!;
                     System.exit(0);
                 }
             }
@@ -205,9 +205,9 @@ public class Game implements Runnable {
     private int getNext(int playernumber, Card currentcard){
 
         if(currentcard.color.length() > 1){
-            Log.i("", names.get(playernumber) + " moved " + (specialCards.get(currentcard.color) - currentposition[playernumber]) + " spaces");
+            consoleout.append( names.get(playernumber) + " moved " + (specialCards.get(currentcard.color) - currentposition[playernumber]) + " spaces");
             currentposition[playernumber] = specialCards.get(currentcard.color);
-/*LOG*/    Log.i("", names.get(playernumber) + " is now at position " + currentposition[playernumber] + ", " + colors.get(board.get(currentposition[playernumber])[0]).substring(8));
+/*LOG*/    consoleout.append( names.get(playernumber) + " is now at position " + currentposition[playernumber] + ", " + colors.get(board.get(currentposition[playernumber])[0]).substring(8));
 
             return specialCards.get(currentcard.color);
         }
@@ -220,8 +220,8 @@ public class Game implements Runnable {
          * If the player is stuck
          */
         if(is_stuck[playernumber] && (!currentcard.color.equalsIgnoreCase(stuck_color[playernumber]))){
-    /*LOG*/    Log.i("", names.get(playernumber) + " didn't get a " + colors.get(stuck_color[playernumber]) + " and is still stuck at ");
-    /*LOG*/    Log.i("", colors.get(stuck_color[playernumber]) + "#" + playerposition);
+    /*LOG*/    consoleout.append( names.get(playernumber) + " didn't get a " + colors.get(stuck_color[playernumber]) + " and is still stuck at ");
+    /*LOG*/    consoleout.append( colors.get(stuck_color[playernumber]) + "#" + playerposition);
 
             return playerposition;
         }
@@ -243,22 +243,22 @@ public class Game implements Runnable {
             n++;
 
             if(n>132){
-                Log.i("", names.get(playernumber) + " moved " + (n - currentposition[playernumber]) + " spaces");
-                Log.i("", names.get(playernumber) + " has passed the threshold!");
+                consoleout.append( names.get(playernumber) + " moved " + (n - currentposition[playernumber]) + " spaces");
+                consoleout.append( names.get(playernumber) + " has passed the threshold!");
                 return 1000;
             }
 //            System.out.println("Looking at " + board.get(n)[0] + "\t" + board.get(n)[1]);
         }
 //        System.out.println(board.get(n)[0] + "=?=" + currentcard.color);
 
-        Log.i("", names.get(playernumber) + " moved " + (n - currentposition[playernumber]) + " spaces");
+        consoleout.append( names.get(playernumber) + " moved " + (n - currentposition[playernumber]) + " spaces");
 
         currentposition[playernumber] = n;
-        /*LOG*/    Log.i("", names.get(playernumber) + " is now at position " + colors.get(board.get(n)[0]) + "#" + currentposition[playernumber]);
+        /*LOG*/    consoleout.append( names.get(playernumber) + " is now at position " + colors.get(board.get(n)[0]) + "#" + currentposition[playernumber]);
 
 
         if(board.get(n).length > 2){
-            /*LOG*/    Log.i("", names.get(playernumber) + " is now stuck ");
+            /*LOG*/    consoleout.append( names.get(playernumber) + " is now stuck ");
             is_stuck[playernumber] = true;
             stuck_color[playernumber] = (board.get(n)[0]);
         }
@@ -268,7 +268,7 @@ public class Game implements Runnable {
 
     private Card drawCard(){
         if(deck.isEmpty()) {
-            Log.i("", "\nNo more cards, reshuffling");
+            consoleout.append( "\nNo more cards, reshuffling");
             draw();
             shuffle();
         }
